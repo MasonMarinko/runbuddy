@@ -421,6 +421,18 @@ section {
     line-height: 1.3;
 }
 
+.trainer-bio h3 {
+    font-size: 28px;
+    display: none;
+}
+
+.trainer-bio h4 {
+    font-weight: lighter;
+    font-size: 22px;
+    margin-bottom: 15px;
+    display: none;
+}
+
 .trainer-bio p {
     font-size: 17px;
 }
@@ -622,6 +634,29 @@ section {
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
+    .trainer-bio h3 {
+        font-size: 28px;
+        display: list-item;
+        list-style: none;
+        
+    }
+    
+    .trainer-bio h4 {
+        font-weight: lighter;
+        font-size: 22px;
+        margin-bottom: 15px;
+        display: list-item;
+        list-style: none;
+    }
+
+    .trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4 {
+        display: none;
+    }
+
+    .trainer:hover .trainer-img::after {
+        display: none;
+    }
+
     section {
         padding: 30px 15px;
     }
